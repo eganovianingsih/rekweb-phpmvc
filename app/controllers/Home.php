@@ -9,5 +9,4 @@
 			$this->view('templates/footer');
 		}
 	}
-
  ?>
