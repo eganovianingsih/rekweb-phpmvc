@@ -67,7 +67,7 @@
 
 		return $this->db->rowCount();			
 	}
-	
+
 	public function cariDataMahasiswa()
 	{
 		$keyword = $_POST['keyword'];
@@ -77,7 +77,5 @@
 		return $this->db->resultSet();
 	}
 	}
-
-
 
  ?>

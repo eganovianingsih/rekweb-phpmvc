@@ -59,6 +59,7 @@ public function index(){
 		}
 	}
 
+	
 	public function cari()
 	{
 		$data['judul']='Daftar Mahasiswa';

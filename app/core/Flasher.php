@@ -19,6 +19,7 @@ class Flasher{
             <span aria-hidden="true">&times;</span>
           </button>
         </div>';
+        
         unset($_SESSION['flash']);
         }
     }

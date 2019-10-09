@@ -79,9 +79,7 @@
 				<option value="Teknik Planologi">Teknik Planologi</option>
 				<option value="Teknik Lingkungan">Teknik Lingkungan</option>
 				</select>
-			</div>
-
-		
+			</div>		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

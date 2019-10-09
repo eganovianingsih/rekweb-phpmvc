@@ -1,6 +1,6 @@
 <div class="container">
 	<h1>Selamat Datang di Website Saya</h1>
-
+  
 <div class="jumbotron mt-4">
   <h1 class="display-4">Selamat Datang di website Saya</h1>
   <p class="lead">Halo, Nama Saya <?= $data['nama']; ?></p>
