@@ -13,7 +13,7 @@ class About extends Controller{
 		$this->view('templates/footer');
 	}
 
-	
+
 	public function page()
 	{
 		$data['judul'] = 'My Pages';
