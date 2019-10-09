@@ -70,5 +70,4 @@ public function index(){
 }
 
 	
-
  ?>
