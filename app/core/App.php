@@ -37,8 +37,6 @@
 		}
 
 			
-		
-
 		public function perseURL(){
 			if( isset($_GET['url']) ) {
 				$url = rtrim($_GET['url'], '/');
