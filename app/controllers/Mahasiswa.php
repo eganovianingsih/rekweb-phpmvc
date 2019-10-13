@@ -1,7 +1,8 @@
 <?php 
 
 	class Mahasiswa extends Controller{
-public function index(){
+public function index()
+{
 	$data['judul'] = 'Daftar Mahasiswa';
 	$data['mhs'] = $this->model('Mahasiswa_model')->getAllMahasiswa();
 	$this->view('templates/header',$data);
@@ -9,7 +10,8 @@ public function index(){
 	$this->view('templates/footer');
 }
 
-	public function detail($id){
+	public function detail($id)
+	{
 	$data['judul'] = 'Detail Mahasiswa';
 	$data['mhs'] = $this->model('Mahasiswa_model')->getMahasiswaById($id);
 	$this->view('templates/header', $data);
@@ -48,12 +50,12 @@ public function index(){
 
 	public function ubah()
 	{
-		if($this->model('Mahasiswa_model')->ubahDataMahasiswa($_POST) > 0){
-			Flasher::setFlash(' berhasil', 'diubah', 'success');
+		if($this->model('Mahasiswa_model')->ubahDataMahasiswa($_POST) > 0 ){
+			Flasher::setFlash('berhasil', 'diubah', 'success');
 			header('Location: ' . BASEURL . '/mahasiswa');
 			exit;
 		}else{
-			Flasher::setFlash(' gagal', 'diubah', 'danger');
+			Flasher::setFlash('gagal', 'diubah', 'danger');
 			header('Location: ' . BASEURL . '/mahasiswa');
 			exit;
 		}
@@ -65,9 +67,10 @@ public function index(){
 		$data['judul']='Daftar Mahasiswa';
 		$data['mhs']= $this->model('Mahasiswa_model')->cariDataMahasiswa();
 		$this->view('templates/header',$data);
-		$this->view('mahasiswa/index',$data);
-		$this->view('templates/footer');
+			$this->view('mahasiswa/index',$data);
+				$this->view('templates/footer');
 	}
-}
+
+	}
 
  ?>
